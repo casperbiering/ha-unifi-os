@@ -1,0 +1,59 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]",
+      "unique_id_mismatch": "The credentials belong to a different UniFi OS console."
+    },
+    "error": {
+      "faulty_credentials": "[%key:common::config_flow::error::invalid_auth%]",
+      "not_unifi_os": "This host is not a UniFi OS console.",
+      "service_unavailable": "[%key:common::config_flow::error::cannot_connect%]"
+    },
+    "flow_title": "{name} ({host})",
+    "step": {
+      "user": {
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]",
+          "password": "[%key:common::config_flow::data::password%]",
+          "port": "[%key:common::config_flow::data::port%]",
+          "username": "[%key:common::config_flow::data::username%]",
+          "verify_ssl": "[%key:common::config_flow::data::verify_ssl%]"
+        },
+        "data_description": {
+          "host": "Hostname or IP address of your UniFi OS console.",
+          "password": "The password of the local UniFi OS user.",
+          "port": "The port your UniFi OS console is running on.",
+          "username": "The username of the local UniFi OS user.",
+          "verify_ssl": "Whether to verify the SSL certificate of the UniFi OS console."
+        },
+        "title": "Set up UniFi OS"
+      }
+    }
+  },
+  "entity": {
+    "update": {
+      "access": {
+        "name": "UniFi Access Application"
+      },
+      "connect": {
+        "name": "UniFi Connect Application"
+      },
+      "firmware": {
+        "name": "Firmware"
+      },
+      "innerspace": {
+        "name": "UniFi Innerspace Application"
+      },
+      "network": {
+        "name": "UniFi Network Application"
+      },
+      "protect": {
+        "name": "UniFi Protect Application"
+      },
+      "talk": {
+        "name": "UniFi Talk Application"
+      }
+    }
+  }
+}

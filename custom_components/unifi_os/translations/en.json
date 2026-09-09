@@ -1,0 +1,59 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reauth_successful": "Re-authentication was successful",
+      "unique_id_mismatch": "The credentials belong to a different UniFi OS console."
+    },
+    "error": {
+      "faulty_credentials": "Invalid authentication",
+      "not_unifi_os": "This host is not a UniFi OS console.",
+      "service_unavailable": "Failed to connect"
+    },
+    "flow_title": "{name} ({host})",
+    "step": {
+      "user": {
+        "data": {
+          "host": "Host",
+          "password": "Password",
+          "port": "Port",
+          "username": "Username",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "host": "Hostname or IP address of your UniFi OS console.",
+          "password": "The password of the local UniFi OS user.",
+          "port": "The port your UniFi OS console is running on.",
+          "username": "The username of the local UniFi OS user.",
+          "verify_ssl": "Whether to verify the SSL certificate of the UniFi OS console."
+        },
+        "title": "Set up UniFi OS"
+      }
+    }
+  },
+  "entity": {
+    "update": {
+      "access": {
+        "name": "UniFi Access Application"
+      },
+      "connect": {
+        "name": "UniFi Connect Application"
+      },
+      "firmware": {
+        "name": "Firmware"
+      },
+      "innerspace": {
+        "name": "UniFi Innerspace Application"
+      },
+      "network": {
+        "name": "UniFi Network Application"
+      },
+      "protect": {
+        "name": "UniFi Protect Application"
+      },
+      "talk": {
+        "name": "UniFi Talk Application"
+      }
+    }
+  }
+}
