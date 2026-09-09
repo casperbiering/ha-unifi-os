@@ -9,5 +9,5 @@
   "issue_tracker": "https://github.com/casperbiering/ha-unifi-os/issues",
   "loggers": ["aiounifi"],
   "requirements": ["aiounifi==95"],
-  "version": "0.0.0"
+  "version": "0.1.0"
 }
