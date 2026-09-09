@@ -1,0 +1,45 @@
+{
+  "type": "SYSTEM",
+  "apps": {
+    "controllers": [
+      {
+        "name": "network",
+        "isInstalled": true,
+        "version": "10.5.67",
+        "updateAvailable": "10.6.101",
+        "updatable": true,
+        "releaseChannel": "release"
+      },
+      {
+        "name": "protect",
+        "isInstalled": false,
+        "version": "",
+        "updateAvailable": null,
+        "updatable": true,
+        "releaseChannel": "release"
+      }
+    ]
+  },
+  "devices": {
+    "unifiOS": [
+      {
+        "firmware": "5.1.31",
+        "firmwareStatus": "upToDate",
+        "mac": "00DEAD00BEEF",
+        "model": "UDM SE",
+        "name": "Dream Machine",
+        "shortname": "UDMPROSE"
+      }
+    ]
+  },
+  "firmware": {
+    "latest": {
+      "version": "v5.1.31+5acc35d",
+      "version_major": 5,
+      "version_minor": 1,
+      "version_patch": 31
+    },
+    "progress": { "progress": 100, "state": "done" },
+    "update": { "state": "NOT_STARTED" }
+  }
+}
