@@ -31,6 +31,8 @@ Do not copy [scaarup/aula](https://github.com/scaarup/aula) (zip_release, black,
 
 Use Conventional Commits. Actions → **Release** → Run workflow.
 
+Release authenticates as the GitHub App whose ID is `vars.RELEASE_APP_ID`. That App must stay on the `main` ruleset bypass list so python-semantic-release can push the version commit and tag. `GITHUB_TOKEN` cannot bypass.
+
 - `feat:` minor, `fix:` / `perf:` patch, `BREAKING CHANGE:` or `type!:` major
 - `chore:`, `docs:`, `ci:`, `refactor:`, `test:`, `style:` do not bump; they are included in the next feat/fix/breaking changelog
 - Dependabot PRs use `chore(deps):` and do not bump
