@@ -23,7 +23,7 @@ Do not copy [scaarup/aula](https://github.com/scaarup/aula) (zip_release, black,
 - Unique ids: OS `unifi_os-{mac}`, apps `unifi_app-{mac}-{name}`. Uninstalled apps get no entity.
 - Poll every 30 minutes.
 - Version lives in `custom_components/unifi_os/manifest.json`. Python Semantic Release stamps it on a manual Release run.
-- Keep `requirements.txt` `aiounifi==…` in lockstep with `manifest.json` `requirements` when merging pip PRs.
+- Keep `requirements.txt` and `manifest.json` `requirements` in lockstep. Libraries Home Assistant also ships use a minimum (`aiounifi>=…`); exact pins are for packages core does not ship (pytest plugin, ruff).
 - Do not add a local “fake updates” preview overlay.
 - Do not open a `hacs/default` PR unless explicitly asked.
 
